@@ -1,0 +1,28 @@
+{
+  "name": "Asma ul Husna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:lessons": "node scripts/generateLessons.mjs",
+    "lessons:arabic-roll": "node scripts/convertRemembranceToArabic.mjs",
+    "images:reindex": "node scripts/renameImages.mjs",
+    "lessons:tts": "node scripts/tts_lessons.mjs ./daily_lessons.json --out ./tts_audio --voice Kore --model gemini-2.5-flash-preview-tts",
+    "videos:asma": "node scripts/fetchAsmaVideoList.mjs",
+    "videos:sort": "node scripts/sortAsmaVideos.mjs",
+    "videos:rerank": "node scripts/rerankAsmaVideos.mjs",
+    "bot:start": "node scripts/telegramBot.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.19.0",
+  "dependencies": {
+    "@google/genai": "^1.27.0",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.64.0",
+    "wav": "^1.0.2"
+  }
+}

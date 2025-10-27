@@ -1,0 +1,33 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Env & secrets
+.env
+.env.*
+
+# Node & package managers
+node_modules/
+pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build or generated outputs
+dist/
+build/
+tmp/
+*.tmp
+
+# Project artifacts
+/data/user_progress.json
+/tts_audio/
+/daily_lessons.json
+/daily_lessons copy.json
+/asma_ul_husna_videos.json
+
+# IDE/editor noise
+.idea/
+.vscode/
+*.swp
+*.swo
