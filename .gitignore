@@ -19,12 +19,6 @@ build/
 tmp/
 *.tmp
 
-# Project artifacts
-/data/user_progress.json
-/tts_audio/
-/daily_lessons.json
-/daily_lessons copy.json
-/asma_ul_husna_videos.json
 
 # IDE/editor noise
 .idea/
